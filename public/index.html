@@ -1,10 +1,15 @@
-
 <html>
   <head>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
@@ -14,54 +19,57 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <ul>
-            <li class="title">
-              Event-Booking-db
-            </li>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Event-Booking-db</span>
+            <span class="nav-link" href="/users">Users</span>
+            <span class="nav-link" href="/events">Events</span>
+          </div>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="height-100">
       <div class="container">
         <h1>Congrats!</h1>
-        <p>
-          This is the backend file for Event-Booking-app.
-        </p>
+        <p>This is the backend file for Event-Booking-app.</p>
 
         <div id="resources"></div>
 
+        <p>To access and modify resources, you can use any HTTP method:</p>
         <p>
-          To access and modify resources, you can use any HTTP method:
-        </p>
-        <p>
-            <Strong>Events</Strong>
-            GET    <code>/events</code>
-            GET    <code>/events/:id</code>
-            POST   <code>/events</code>
-            PUT    <code>/events/:id</code>
-            PATCH  <code>/events/:id</code>
-            DELETE <code>/events/:id</code>
+          <strong>Events</strong><br />
+          GET <code>/events</code><br />
+          GET <code>/events/:id</code><br />
+          POST <code>/events</code><br />
+          PUT <code>/events/:id</code><br />
+          PATCH <code>/events/:id</code><br />
+          DELETE <code>/events/:id</code><br />
+          <br />
+          <br />
 
-            <Strong>Users</Strong>
-            GET    <code>/users</code>
-            GET    <code>/users/:id</code>
-            POST   <code>/users</code>
-            PUT    <code>/users/:id</code>
-            PATCH  <code>/users/:id</code>
-            DELETE <code>/users/:id</code>
+          <strong>Users</strong><br />
+          GET <code>/users</code><br />
+          GET <code>/users/:id</code><br />
+          POST
+          <code>/users</code><br />
+          PUT <code>/users/:id</code><br />
+          PATCH
+          <code>/users/:id</code><br />
+          DELETE <code>/users/:id</code>
         </p>
       </div>
     </main>
 
     <footer>
-      <div class="container">
-        <p>
-          This page created by Thananchayan Manoharan.
-        </p>
+      <div class="container sticky-bottom text-center">
+        <p>This server was created by Thananchayan Manoharan.</p>
       </div>
     </footer>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
