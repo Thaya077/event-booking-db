@@ -3427,6 +3427,74 @@
       "quantity": 1,
       "id": 101
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@admin.com",
+      "name": "Admin User",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "994b",
+      "email": "view@viewer.com",
+      "name": "Viewer1",
+      "password": "123456789",
+      "role": "viewer"
+    },
+    {
+      "id": "org001",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "123456",
+      "role": "organizer",
+      "contactNumber": "9876543210"
+    },
+    {
+      "id": "b09e",
+      "email": "view2@viewer",
+      "name": "viewer2",
+      "password": "12345678",
+      "role": "viewer"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "Music Night",
+      "dateTime": "2025-09-10T19:00:00",
+      "bookingCloses": "2025-09-10T18:30:00",
+      "venue": "Town Hall",
+      "organizerId": "org001",
+      "organizerName": "John Doe",
+      "totalSeats": 100,
+      "bookedSeats": 28,
+      "participants": ["view@viewer.com"],
+      "description": "An evening of live music."
+    },
+    {
+      "id": "org001_001",
+      "title": "Angular Workshop",
+      "dateTime": "2025-09-01T10:00:00",
+      "venue": "City Hall",
+      "totalSeats": 100,
+      "bookedSeats": 25,
+      "participants": ["view@viewer.com"],
+      "description": "Learn Angular basics",
+      "organizerId": "org001",
+      "organizerName": "John Doe"
+    },
+    {
+      "id": "org001_1757862040991",
+      "title": "Test00",
+      "dateTime": "2025-09-30T18:00",
+      "venue": "Local",
+      "totalSeats": 50,
+      "description": "dftvgfdgvgtdfvggr",
+      "organizerId": "org001",
+      "bookedSeats": 0,
+      "participants": []
+    }
   ]
-  
 }
